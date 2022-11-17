@@ -1,0 +1,4 @@
+enum AttendanceType {
+  present,
+  absent
+}
