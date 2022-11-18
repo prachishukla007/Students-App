@@ -1,4 +1,0 @@
-enum TestsType {
-  upcoming,
-  result
-}
