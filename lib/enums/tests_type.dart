@@ -1,0 +1,4 @@
+enum TestsType {
+  upcoming,
+  result
+}
