@@ -1,7 +1,8 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/widgets/big_white_container.dart';
+
+import '../widgets/big_white_container.dart';
 
 class ParentBehaviorScreen extends StatelessWidget {
   const ParentBehaviorScreen({Key? key}) : super(key: key);

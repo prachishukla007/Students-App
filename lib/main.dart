@@ -1,8 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:student_ui/common/onboarding_screen.dart';
+import 'package:student_ui/presentation/common/onboarding_screen.dart';
 import 'package:student_ui/resource/app_config.dart';
-import 'package:student_ui/teacher/teacher_attendance_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

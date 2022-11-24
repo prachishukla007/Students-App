@@ -1,10 +1,10 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/widgets/big_white_container.dart';
+import '../../domain/models/attendance_Item.dart';
+import '../../enums/attendance_type.dart';
+import '../widgets/big_white_container.dart';
 
-import '../enums/attendance_type.dart';
-import '../models/attendance_Item.dart';
 
 class TeachersAttendanceScreen extends StatefulWidget {
   const TeachersAttendanceScreen({Key? key}) : super(key: key);

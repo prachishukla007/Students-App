@@ -1,9 +1,11 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../models/students_list_item.dart';
+
+import '../../domain/models/students_list_item.dart';
 import '../widgets/big_white_container.dart';
 import '../widgets/border_box.dart';
+
 
 class TeacherBehaviorBoxScreen extends StatefulWidget {
   final StudentsListItem studentsListItem;

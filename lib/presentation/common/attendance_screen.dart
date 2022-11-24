@@ -1,7 +1,6 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/widgets/border_box.dart';
 
 class AttendanceScreen extends StatelessWidget {
   const AttendanceScreen({Key? key}) : super(key: key);

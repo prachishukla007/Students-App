@@ -1,28 +1,30 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/common/profile_screen.dart';
-import '../models/choice_model.dart';
-import '../widgets/choose_option.dart';
-
+import 'package:student_ui/presentation/student/student_tests_screen.dart';
+import '../../domain/models/choice_model.dart';
 import '../common/achievements_screen.dart';
 import '../common/activity_screen.dart';
 import '../common/attendance_screen.dart';
-import 'parent_behavior_screen.dart';
 import '../common/chat_screen.dart';
+import '../common/profile_screen.dart';
+import '../common/tasks_screen.dart';
+import '../common/time_table_screen.dart';
+import '../widgets/choose_option.dart';
 
-class ParentHomeScreen extends StatefulWidget {
+
+class StudentHomeScreen extends StatefulWidget {
   final String stuID;
 
-  const ParentHomeScreen({Key? key, required this.stuID}) : super(key: key);
+  const StudentHomeScreen({Key? key, required this.stuID}) : super(key: key);
 
   @override
-  State<ParentHomeScreen> createState() => _ParentHomeScreenState();
+  State<StudentHomeScreen> createState() => _StudentHomeScreenState();
 }
 
-class _ParentHomeScreenState extends State<ParentHomeScreen> {
-
+class _StudentHomeScreenState extends State<StudentHomeScreen> {
   final String assetName = "assets/icons/add_stu.svg";
+
   List<Choice> choice = [
     Choice(
         image: Image.asset(
@@ -33,11 +35,32 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
         title: "Attendance"),
     Choice(
         image: Image.asset(
+          "assets/icons/tasks.png",
+          height: 45,
+          width: 45,
+        ),
+        title: "Tasks"),
+    Choice(
+        image: Image.asset(
+          "assets/icons/tests.png",
+          height: 45,
+          width: 45,
+        ),
+        title: "Tests"),
+    Choice(
+        image: Image.asset(
           "assets/icons/activity.png",
           height: 45,
           width: 45,
         ),
         title: "Activity"),
+    Choice(
+        image: Image.asset(
+          "assets/icons/timetable.png",
+          height: 45,
+          width: 45,
+        ),
+        title: "Time Table"),
     Choice(
         image: Image.asset(
           "assets/icons/chat.png",
@@ -52,13 +75,6 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
           width: 45,
         ),
         title: "Achievements"),
-    Choice(
-        image: Image.asset(
-          "assets/icons/behaviour.png",
-          height: 45,
-          width: 45,
-        ),
-        title: "Behaviour"),
   ];
 
   @override
@@ -81,13 +97,13 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text("Hello Mr. Virendra",
+                              const Text("Hey Rohan",
                                   style: TextStyle(
                                       fontWeight: FontWeight.w700,
                                       fontSize: 22,
                                       color: Colors.white)),
                               const SizedBox(
-                                height: 5,
+                                height: 10,
                               ),
                               Text("ID: ${widget.stuID}",
                                   style: const TextStyle(
@@ -95,10 +111,9 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
                             ],
                           ),
                           GestureDetector(
-                              onTap: () {
-                                Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => const ProfileScreen()));
-                              },
+                              onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                      builder: (context) => const ProfileScreen())),
                               child: SvgPicture.asset(assetName))
                         ],
                       ),
@@ -115,8 +130,8 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            "Rahul Was Absent Today",
-                            "P.T.M this friday 7:00 to 10:00 am",
+                            "Biology Test: Chapter 6,7 or 8",
+                            "Essay writing competition",
                             "Quick quiz"
                           ]
                               .map((filter) => ChooseOption(text: filter))
@@ -125,6 +140,9 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
                       ),
                     ],
                   ),
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
                 Expanded(
                   child: Container(
@@ -172,25 +190,37 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const ActivityScreen()));
+                                                    const TasksScreen()));
                                         break;
                                       case 2:
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const ChatScreen()));
+                                                    const StudentTestsScreen()));
                                         break;
                                       case 3:
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const AchievementsScreen()));
+                                                    const ActivityScreen()));
                                         break;
                                       case 4:
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const ParentBehaviorScreen()));
+                                                    const TimeTableScreen()));
+                                        break;
+                                      case 5:
+                                        Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const ChatScreen()));
+                                        break;
+                                      case 6:
+                                        Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const AchievementsScreen()));
                                         break;
                                     }
                                   },
@@ -231,5 +261,3 @@ class _ParentHomeScreenState extends State<ParentHomeScreen> {
         ));
   }
 }
-
-

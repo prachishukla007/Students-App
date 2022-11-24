@@ -6,12 +6,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:student_ui/resource/app_config.dart';
-import 'package:student_ui/student/student_home_screen.dart';
-import 'package:student_ui/widgets/white_container.dart';
+
 
 import '../parent/parent_home_screen.dart';
+import '../student/student_home_screen.dart';
 import '../teacher/teacher_home_screen.dart';
 import '../widgets/border_box.dart';
+import '../widgets/white_container.dart';
 
 class StudentIDScreen extends StatefulWidget {
   const StudentIDScreen({Key? key}) : super(key: key);

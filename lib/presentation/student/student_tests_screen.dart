@@ -1,10 +1,9 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/widgets/custom_radio_button.dart';
 import 'package:student_ui/enums/tests_type.dart';
-
 import '../widgets/big_white_container.dart';
+import '../widgets/custom_radio_button.dart';
 
 class StudentTestsScreen extends StatefulWidget {
   const StudentTestsScreen({Key? key}) : super(key: key);

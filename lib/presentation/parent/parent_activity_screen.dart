@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../widgets/big_white_container.dart';
 
+
 class ActivityScreen extends StatelessWidget {
   const ActivityScreen({Key? key}) : super(key: key);
 

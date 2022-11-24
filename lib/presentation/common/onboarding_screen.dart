@@ -6,11 +6,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:student_ui/parent/parent_home_screen.dart';
 import 'package:student_ui/resource/app_config.dart';
-import 'package:student_ui/student/student_home_screen.dart';
-import 'package:student_ui/common/login_screen.dart';
-import 'package:student_ui/teacher/teacher_home_screen.dart';
+
+import '../parent/parent_home_screen.dart';
+import '../student/student_home_screen.dart';
+import '../teacher/teacher_home_screen.dart';
+import 'login_screen.dart';
+
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);

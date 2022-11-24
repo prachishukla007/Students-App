@@ -4,11 +4,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/widgets/border_box.dart';
-import 'package:student_ui/common/login_screen.dart';
-import 'package:student_ui/widgets/white_container.dart';
-
+import '../widgets/border_box.dart';
+import '../widgets/white_container.dart';
 import 'enter_student_id_screen.dart';
+import 'login_screen.dart';
 
 class OtpScreen extends StatefulWidget {
   final String phone;

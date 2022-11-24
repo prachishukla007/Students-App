@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:student_ui/common/login_screen.dart';
 import '../widgets/big_white_container.dart';
 import '../widgets/border_box.dart';
 

@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:student_ui/widgets/border_box.dart';
-import 'package:student_ui/common/otp_screen.dart';
-import 'package:student_ui/widgets/white_container.dart';
+
+import '../widgets/border_box.dart';
+import '../widgets/white_container.dart';
+import 'otp_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static String verify = "";

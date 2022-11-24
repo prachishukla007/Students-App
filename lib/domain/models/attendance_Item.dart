@@ -1,4 +1,5 @@
-import '../enums/attendance_type.dart';
+
+import '../../enums/attendance_type.dart';
 
 class AttendanceItems {
   final String image;

@@ -3,10 +3,10 @@ import 'dart:ffi';
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/common/chat_screen.dart';
-import 'package:student_ui/widgets/message_list.dart';
 
 import '../widgets/big_white_container.dart';
+import '../widgets/message_list.dart';
+import 'chat_screen.dart';
 
 class MessagesScreen extends StatefulWidget {
   final ChatItem chatItem;

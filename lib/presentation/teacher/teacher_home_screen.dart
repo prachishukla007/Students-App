@@ -1,14 +1,14 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:student_ui/common/profile_screen.dart';
-import 'package:student_ui/common/tasks_screen.dart';
-import 'package:student_ui/common/time_table_screen.dart';
-import 'package:student_ui/teacher/teacher_behavior_screen.dart';
-import 'package:student_ui/teacher/teacher_tests_screen.dart';
+import 'package:student_ui/presentation/teacher/teacher_behavior_screen.dart';
+import 'package:student_ui/presentation/teacher/teacher_tests_screen.dart';
+import '../../domain/models/choice_model.dart';
 import '../common/achievements_screen.dart';
 import '../common/activity_screen.dart';
-import '../models/choice_model.dart';
+import '../common/profile_screen.dart';
+import '../common/tasks_screen.dart';
+import '../common/time_table_screen.dart';
 import 'teacher_attendance_screen.dart';
 
 
