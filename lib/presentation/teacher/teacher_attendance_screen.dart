@@ -2,7 +2,7 @@ import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../domain/models/attendance_Item.dart';
-import '../../enums/attendance_type.dart';
+import '../../resource/enums/attendance_type.dart';
 import '../widgets/big_white_container.dart';
 
 
